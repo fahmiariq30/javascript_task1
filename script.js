@@ -1,0 +1,40 @@
+function showMessage() {
+	document.getElementById("notice").innerHTML= "Terima kasih telah melakukan pengisian, permintaan anda akan segera kami proses.";
+}
+
+$(document).ready(function(){
+	$("#kirim").click(function(){
+		$("#nama").text(
+			$("#fnama").val()
+		);
+		$("#nama").text(
+			$("#fnama").val()
+		);
+		$("#email").text(
+			$("#femail").val()
+		);
+		$("#phone").text(
+			$("#fphone").val()
+		);
+		$("#vacancy").text(
+			$("#fvacancy").val()
+		);
+		$("#position").text(
+			$("#fposition").val()
+		);
+		$("#notice").text(
+			$("Hallo").val()
+		);
+	});
+	$("#reset").click(function(){
+		$("#fnama").val("");
+		$("#nama").text("");
+		$("#femail").val("");
+		$("#email").text("");
+		$("#fphone").val("");
+		$("#phone").text("");
+		$("#vacancy").text("");
+		$("#position").text("");
+		$("#notice").text("");
+	});
+});

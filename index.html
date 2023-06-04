@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<title>Form HTML</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+
+			<div id="form">
+				<h2>Form Rekrutasi</h2>
+				fullname:<br />
+				<input type="text" name="nama" id="fnama" /><br /><br />
+				Email:<br />
+				<input type="text" name="email" id="femail" /><br /><br />
+				Phome Number:<br />
+				<input type="text" name="phone" id="fphone" /><br /><br />
+				Vacancy<br />
+				<select name="vacancy" id="fvacancy">
+					<option value="">- Pilih Lowongan -</option>
+					<option value="Intern University">Intern University</option>
+					<option value="Full-time">Full-time</option>
+					<option value="Part-time">Part-time</option>
+					<option value="Intern Profeskonal">Intern Profeskonal</option>
+				</select><br /><br />
+
+				Position<span>*</span><br />
+				<select name="position" id="fposition">
+					<option value="">- Pilih Posisi -</option>
+					<option value="Frontend Web Developer">Frontend Web Developer</option>
+					<option value="Backend Web Developer">Backend Web Developer</option>
+					<option value="UI/UX Designer">UI/UX Designer</option>
+					<option value="QA Automation">QA Automation</option>
+					<option value="Database Developer">Database Developer</option>
+					<option value="IT Support">IT Support</option>
+				</select><br />
+
+				
+				<div class="btn">
+					<button id="kirim" onclick="showMessage()">Kirim</button>
+					<button id="reset">Reset</button>
+				</div>
+			</div>
+
+			<div id="tabel">
+				<p id="notice"></p>
+				<table>
+					<tr>
+						<td>Nama</td>
+						<td>:</td>
+						<td id="nama"></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>:</td>
+						<td id="email"></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td>:</td>
+						<td id="phone"></td>
+					</tr>
+					<tr>
+						<td>Vacancy</td>
+						<td>:</td>
+						<td id="vacancy"></td>
+					</tr>
+					<tr>
+						<td>Position</td>
+						<td>:</td>
+						<td id="position"></td>
+					</tr>
+				</table>
+			</div>
+
+	</body>
+</html>
